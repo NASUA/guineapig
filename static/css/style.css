@@ -1,0 +1,52 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.app-container {
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    height: 100vh; /* Takes full height of the viewport */
+    flex-direction: column; /* Aligns children in a column */
+}
+
+.guinea-pig-img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#talkButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#responseText {
+    margin-top: 20px;
+}
+
+#talkButton {
+    background-color: #f0f0f0; /* Light grey background */
+    border: none;
+    width: 64px; /* Adjust as needed */
+    height: 64px; /* Adjust as needed */
+    cursor: pointer;
+    border-radius: 50%; /* Circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#talkButton i {
+    color: #000; /* Icon color */
+    font-size: 32px; /* Icon size */
+}
+

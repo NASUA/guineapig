@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guinea Pig Friend</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            background-color: #FFD700; /* Bright and inviting background color */
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun, kid-friendly font */
+        }
+        .app-container {
+            text-align: center;
+            padding-top: 50px;
+        }
+        img {
+            max-width: 100%; /* Adjust based on your image size */
+            height: auto;
+            border-radius: 20px; /* Soften the edges for a more friendly appearance */
+        }
+        button {
+            background-color: #4CAF50; /* Bright, engaging button color */
+            border: none;
+            color: white;
+            padding: 50px 60px; /* Larger button size for small hands */
+            text-align: center;
+            font-size: 24px; /* Larger font size for readability */
+            margin: 50px 0; /* Add some space around the button */
+            cursor: pointer;
+            border-radius: 12px; /* Rounded corners for a softer look */
+            box-shadow: 0 20px red; /* Adds depth to the button */
+        }
+        button:hover {background-color: #45a049}
+        button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        #responseText {
+            color: #333;
+            font-size: 22px; /* Make the response text larger and more readable */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <img src="{{ url_for('static', filename='guinea_pig.png') }}" alt="Guinea Pig" class="responsive-img">
+        <button id="talkButton"><i class="fas fa-microphone"></i></button>
+        <p id="responseText">Hey, Alice</p>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
